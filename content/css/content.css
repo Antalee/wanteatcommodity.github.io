@@ -1,0 +1,238 @@
+img {
+  width: 100%;
+}
+.item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
+}
+.item .content-title {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.main .main-title {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.money {
+  background-image: url(../dot.svg);
+}
+.list-item {
+  list-style: none;
+  margin: 10px;
+}
+.list-item a {
+  text-decoration: none;
+}
+.option ul li a {
+  color: #6d1818;
+}
+.option ul li a:hover {
+  color: #a28282;
+}
+/* .list-item:active #dot_active .cls-1 {
+  fill: #ffff;
+} */
+.item button {
+  background-color: #ffffff;
+}
+.item button p {
+  color: #000000;
+}
+.item button:hover {
+  background-color: #ffffff;
+}
+.item {
+  margin: 20px;
+}
+.main .item button:active {
+  color: #ffffff;
+}
+.option {
+  padding: 50px;
+}
+.modal-body {
+  display: inline-block;
+}
+/*商品圖*/
+.item button {
+  width: 100%;
+}
+.product_block {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 260px;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  padding: 100;
+  margin: 100;
+}
+.product_01 {
+  background-image: url(../commodity_img/chocolate.png);
+  background-size: 320px 180px;
+}
+.product_01:hover {
+  background-image: url(../gif/chocolate\ cyst.gif);
+}
+.product_02 {
+  background-image: url(../commodity_img/heart.png);
+  background-size: 320px 180px;
+}
+.product_02:hover {
+  background-image: url(../gif/heart.gif);
+  background-size: 320px 180px;
+}
+.product_03 {
+  background-image: url(../commodity_img/liver.png);
+  background-size: 320px 180px;
+}
+.product_03:hover {
+  background-image: url(../gif/liver.gif);
+  background-size: 240px 135px;
+}
+.product_04 {
+  background-image: url(../commodity_img/lung.png);
+  background-size: 320px 180px;
+}
+.product_04:hover {
+  background-image: url(../gif/lung.gif);
+  background-size: 320px 180px;
+}
+.product_05 {
+  background-image: url(../commodity_img/stomach.png);
+  background-size: 288px 162px;
+}
+.product_05:hover {
+  background-image: url(../gif/stomach.gif);
+  background-size: 288px 162px;
+}
+.product_06 {
+  background-image: url(../commodity_img/fat.png);
+  background-size: 240px 135px;
+}
+.product_06:hover {
+  background-image: url(../gif/fat.gif);
+  background-size: 240px 135px;
+}
+.product_07 {
+  background-image: url(../commodity_img/kidney.png);
+  background-size: 320px 180px;
+}
+.product_07:hover {
+  background-image: url(../gif/kidney.gif);
+  background-size: 320px 180px;
+}
+.product_08 {
+  background-image: url(..//commodity_img/brand.png);
+  background-size: 208px 117px;
+}
+.product_08:hover {
+  background-image: url(../gif/brand.gif);
+  background-size: 208px 117px;
+}
+.product_09 {
+  background-image: url(../commodity_img/courage.png);
+  background-size: 320px 180px;
+}
+.item .btn-primary {
+  border: transparent;
+  border-radius: 25px;
+}
+@media (min-width: 720px) {
+  .container {
+    min-width: 520px;
+  }
+}
+.productB_01 {
+  background-image: url(../commodity_img/chocolate.png);
+}
+.productB_01:hover {
+  background-image: url(../gif/chocolate\ cyst.gif);
+}
+.productB_02 {
+  background-image: url(../commodity_img/heart.png);
+}
+.productB_02:hover {
+  background-image: url(../gif/heart.gif);
+}
+.productB_03 {
+  background-image: url(../commodity_img/liver.png);
+}
+.productB_03:hover {
+  background-image: url(../gif/liver.gif);
+}
+.productB_04 {
+  background-image: url(../commodity_img/lung.png);
+}
+.productB_04:hover {
+  background-image: url(../gif/lung.gif);
+}
+.productB_05 {
+  background-image: url(../commodity_img/stomach.png);
+}
+.productB_05:hover {
+  background-image: url(../gif/stomach.gif);
+}
+.productB_06 {
+  background-image: url(../commodity_img/fat.png);
+}
+.productB_06:hover {
+  background-image: url(../gif/fat.gif);
+}
+.productB_07 {
+  background-image: url(../commodity_img/kidney.png);
+}
+.productB_07:hover {
+  background-image: url(../gif/kidney.gif);
+}
+.productB_08 {
+  background-image: url(../commodity_img/brand.png);
+}
+.productB_08:hover {
+  background-image: url(../gif/brand.gif);
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ffffff;
+  --bs-btn-active-border-color: #ffffff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #ffffff;
+  --bs-btn-disabled-border-color: #ffffff;
+}
+/*1218*/
+.list-item input {
+  display: none;
+}
+.list-item label {
+  cursor: pointer;
+}
+.list-item label {
+  color: #6d1818;
+  vertical-align: middle;
+}
+.star_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/star_before_checked.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.list-item input[type="checkbox"]:checked ~ label .star_icon {
+  background-image: url(../img/star_after_checked.png);
+}

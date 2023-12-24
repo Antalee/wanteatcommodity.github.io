@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <!--字體-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;500&family=Noto+Serif+HK:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="./css/content.css" rel="stylesheet" />
+    <!--bootstrap-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-2">
+          <div class="option">
+            <ul>
+              <!--價格list-->
+              <p class="option-title">價格</p>
+              <!--svg-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="2"
+                viewBox="0 0 135 2"
+                fill="none"
+              >
+                <path d="M135 1H0" stroke="#6D1818" stroke-width="2" />
+              </svg>
+              <!--價錢2000-->
+              <li class="list-item">
+                <input type="checkbox" id="price_2000" />
+                <label for="price_2000">
+                  <span class="star_icon"></span>
+                  <span>2000</span>
+                </label>
+              </li>
+              <!--價錢1000-->
+              <li class="list-item">
+                <input type="checkbox" id="price_1000" />
+                <label for="price_1000">
+                  <span class="star_icon"></span>
+                  <span>1000</span>
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="price_500" />
+                <label for="price_500">
+                  <span class="star_icon"></span>
+                  <span>500</span>
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="price_100" />
+                <label for="price_100">
+                  <span class="star_icon"></span>
+                  <span>100</span>
+                </label>
+              </li>
+              <!--顏色list-->
+              <p class="option-title">顏色</p>
+
+              <!--svg-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="2"
+                viewBox="0 0 135 2"
+                fill="none"
+              >
+                <path d="M135 1H0" stroke="#6D1818" stroke-width="2" />
+              </svg>
+              <li class="list-item">
+                <input type="checkbox" id="color_01" />
+                <label for="color_01">
+                  <span class="star_icon"></span>
+                  <span>暗戀酒紅</span>
+                </label>
+              </li>
+
+              <li class="list-item">
+                <input type="checkbox" id="color_02" />
+                <label for="color_02">
+                  <span class="star_icon"></span>
+                  <span>熱戀粉紅</span>
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="color_03" />
+                <label for="color_03">
+                  <span class="star_icon"></span>
+                  <span>綠光罩頂</span>
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="color_04" />
+                <label for="color_04">
+                  <span class="star_icon"></span>
+                  <span>歡快之黃</span>
+                </label>
+              </li>
+              <!--新鮮度-->
+              <p class="option-title">新鮮度</p>
+              <!--svg-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="2"
+                viewBox="0 0 135 2"
+                fill="none"
+              >
+                <path d="M135 1H0" stroke="#6D1818" stroke-width="2" />
+              </svg>
+              <li class="list-item">
+                <input type="checkbox" id="fresh_01" />
+                <label for="fresh_01">
+                  <span class="star_icon"></span>
+                  <span>今日現摘</span>
+                </label>
+              </li>
+
+              <li class="list-item">
+                <input type="checkbox" id="fresh_02" />
+                <label for="fresh_02">
+                  <span class="star_icon"></span>
+                  <span>昨日進貨</span>
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="fresh_03" />
+                <label for="fresh_03">
+                  <span class="star_icon"></span>
+                  <span>當季熱貨</span>
+                </label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="fresh_04" />
+                <label for="fresh_04">
+                  <span class="star_icon"></span>
+                  <span>即期商品</span>
+                </label>
+              </li>
+            </ul>
+            <!--價格list-->
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-10">
+          <div class="row">
+            <!--商品-->
+            <div class="main">
+              <p class="main-title">商品專區</p>
+            </div>
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  <!--先把背景寫出來，記得編碼（product_01）-->
+                  <div class="product_block product_01"></div>
+                  <!-- <img src="./commodity_img375*505/chocolate.png" /> -->
+                  <p class="content-title">巧克力囊腫</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop_02"
+                >
+                  <div class="product_block product_02"></div>
+                  <p class="content-title">心臟</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop_03"
+                >
+                  <div class="product_block product_03"></div>
+                  <p class="content-title">肝</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop_04"
+                >
+                  <div class="product_block product_04"></div>
+                  <p class="content-title">肺</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop_05"
+                >
+                  <div class="product_block product_05"></div>
+                  <p class="content-title">胃</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop_06"
+                >
+                  <div class="product_block product_06"></div>
+                  <p class="content-title">脂肪瘤</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop_07"
+                >
+                  <div class="product_block product_07"></div>
+                  <p class="content-title">腎</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop_08"
+                >
+                  <div class="product_block product_08"></div>
+                  <p class="content-title">腦</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5">
+              <div class="item">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop_09"
+                >
+                  <div class="product_block product_09"></div>
+                  <p class="content-title">膽</p>
+                  <img src="./img/shopping.png" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--點擊後的彈出視窗-->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <!-- Vertically centered modal -->
+    <!--巧克力囊腫-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel01">
+                巧克力囊腫
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="product_block productB_01"></div>
+              <p>
+                在愛情的世界裡， 你就像我內心的巧克力囊腫，微小而獨特。
+                這個微小的存在彷彿是愛情的糖分，融進我的心房，
+                讓每一刻都充滿了幸福。你在我的生命中帶來無盡的甜蜜和愛意。
+                每一次心跳都是對你深深的思念，彷彿是一場充滿甜蜜的夢，
+                讓生命更加豐富、美好。在這巧克力囊腫的世界中，
+                你是我永不停歇的愛戀，為生命灑下一抹甜蜜的光華。
+              </p>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--心臟-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop_02"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel02">心臟</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="product_block productB_02"></div>
+              <p>
+                當我們的愛情像心臟一樣，每分每秒都在烙地跳動，彷彿奏響著生命的美妙樂章。這顆心臟，是愛的陪伴，每次跳動都是對你的思念；是溫柔的律動，就像愛意在我們之間流動。就像心臟是生命的核心，你就是我生命中的核心，每一個心跳都是對你深深的愛戀的回應。願這顆心臟，永遠奏響愛的響亮旋律，陪伴著你我共度美好時光。
+              </p>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--肝-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop_03"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel03">肝</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="product_block productB_03"></div>
+              <p>
+                你的堅強和耐力，讓我深感敬佩。就像戀人間的信任一樣，我相信你會為我守護著身體，讓我們共同走過生命的每一個階段。
+                有時，我們的生活方式可能對你造成一些負擔，但你從未抱怨過，總是默默地承受。這讓我想起愛情中的包容，即使面對困難，我們也能夠一同克服。
+              </p>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--肺-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop_04"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel04">肺</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="product_block productB_04"></div>
+              <p>
+                當愛情如同肺一樣，是我們共同呼吸的空氣，每一次的呼吸都充滿了對你的深深的思戀。你是我生命中的氧氣，讓我的每一個瞬間都充滿了活力與生命。肺在為我們提供氧氣，您在我的生命中為我注入愛的力量，讓我享受無盡的身體溫暖。願愛情像呼吸一樣自然流動，讓在共同的呼吸中愛的深度和美好。中的包容，即使面對困難，我們也能夠一同克服。
+              </p>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--胃-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop_05"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel04">胃</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="product_block productB_05"></div>
+              <p>
+                在愛情的颯宴中，你就像我心靈的胃，引導而充滿溢溫馨。你的存在，宛如身體在身體中靜靜地為愛情提供養分，讓心靈在你的心靈的滋養中感受到滿足。就如同胃一樣每一次的心跳，都是對你深深的愛意，彷彿在享受一場愛的盛宴。在此愛情的胃裡，你是我永不減少的飽足感，為生命灑下一片滿溢幸福的滋味。
+              </p>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--脂肪瘤-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop_06"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel06">胃</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="product_block productB_06"></div>
+              <p>
+                在愛情的颯宴中，你就像我心靈的胃，引導而充滿溢溫馨。你的存在，宛如身體在身體中靜靜地為愛情提供養分，讓心靈在你的心靈的滋養中感受到滿足。就如同胃一樣每一次的心跳，都是對你深深的愛意，彷彿在享受一場愛的盛宴。在此愛情的胃裡，你是我永不減少的飽足感，為生命灑下一片滿溢幸福的滋味。
+              </p>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--腎-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop_07"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel07">腎</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="product_block productB_07"></div>
+              <p>
+                在愛情的颯宴中，你就像我心靈的胃，引導而充滿溢溫馨。你的存在，宛如身體在身體中靜靜地為愛情提供養分，讓心靈在你的心靈的滋養中感受到滿足。就如同胃一樣每一次的心跳，都是對你深深的愛意，彷彿在享受一場愛的盛宴。在此愛情的胃裡，你是我永不減少的飽足感，為生命灑下一片滿溢幸福的滋味。
+              </p>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--腦-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop_08"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel08">腦</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="product_block productB_08"></div>
+              <p>
+                當愛情彷彿大腦中的微光，點亮我們共同創造的點點回憶。你是我的心智之光，每一縷微笑都彷彿大腦中的陽光，溫暖著我的靈魂。就像思維中的靈感迸發，你引發我生命中無窮的靈感，讓愛情的火花在心靈中綻放。我們願的愛情，如想像中的智慧，不斷進化，創造出更多美好的思緒與回憶。
+              </p>
+            </div>
+
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--膽-->
+    <div class="modal-dialog">
+      <div
+        class="modal fade"
+        id="staticBackdrop_09"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel09">膽</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="./commodity_img/courage.png" />
+              <p>
+                在愛情的歷程中，你如同我心靈的膽，勇敢而堅韌。你的存在，猶如膽在身體中默默守護，為愛情注入不屈的勇氣。就像膽對身體的幫助，你對我的生命充滿勇敢和支持，讓我在愛的道路上無所畏懼。每一次心跳，都是對你深深的尊敬，彷彿在品味愛情中的風華。在這愛情的膽囊中，你是我不可或缺的勇氣，為生命灑下一抹堅定的光芒。
+              </p>
+            </div>
+
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!--boostrap-->
+  </body>
+</html>
